@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package ntwrk.partner.v1;
+
+option go_package = "ntwrk/partner/v1";
+
+import "google/protobuf/timestamp.proto";
+
+message Partner {
+  string id = 1;
+  string name = 2;
+  bool active = 3;
+  string domain = 4;
+  google.protobuf.Timestamp created_at = 20;
+  google.protobuf.Timestamp updated_at = 21;
+}

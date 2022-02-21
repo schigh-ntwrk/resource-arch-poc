@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ntwrk.user.v1;
+
+option go_package = "ntwrk/user/v1";
+
+import "google/protobuf/timestamp.proto";
+
+message User {
+  string id = 1;
+  string email = 2;
+  bool active = 3;
+  google.protobuf.Timestamp created_at = 20;
+  google.protobuf.Timestamp updated_at = 21;
+}
